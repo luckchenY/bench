@@ -109,8 +109,7 @@ dmypy.json
 *.flv
 *.webm
 
-# Data files
-*.csv
+# Data files (but allow refined_output)
 *.json
 *.txt
 *.pdf
@@ -118,8 +117,11 @@ dmypy.json
 # Output directories
 output/
 refine/
-refined_output/
 audio/
+
+# Allow CSV files in refined_output directory
+!refined_output/
+!refined_output/*.csv
 
 # Temporary files
 *.tmp
