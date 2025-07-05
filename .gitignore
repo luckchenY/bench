@@ -116,12 +116,16 @@ dmypy.json
 
 # Output directories
 output/
-refine/
 audio/
 
-# Allow CSV files in refined_output directory
+# Allow files in refined_output directory
 !refined_output/
 !refined_output/*.csv
+
+# Allow files in refine directory
+!refine/
+!refine/*.csv
+!refine/*.json
 
 # Temporary files
 *.tmp
